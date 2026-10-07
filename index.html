@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tríptico Digital - Diseño y Programación Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>TRÍPTICO</h1>
+    <p>Diseño y Programación Web</p>
+  </header>
+
+  <main class="wrapper">
+    <section class="trifold card">
+      <article class="panel panel-left">
+        <div class="bubble bubble-a"></div>
+        <div class="photo-wrap photo-round">
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85" alt="Persona usando realidad virtual">
+        </div>
+        <h2>Diseño<br>Futurista</h2>
+        <p>Creamos experiencias digitales modernas, atractivas y adaptadas a cualquier dispositivo.</p>
+        <p>Combinamos creatividad, diseño visual y programación para transformar ideas en proyectos web.</p>
+      </article>
+
+      <article class="panel panel-center center-content">
+        <h2 class="big-title">VISÍTANOS</h2>
+        <div class="qr-demo" aria-label="QR de demostración"><div class="qr-grid"></div></div>
+        <p class="small">Escanea el código QR para conocer más sobre nuestra carrera, proyectos y actividades.</p>
+        <h3>CONTÁCTANOS</h3>
+        <div class="contact-list">
+          <span>☎ +51 999 999 999</span>
+          <span>✉ correo@instituto.edu.pe</span>
+          <span>⌖ Lima, Perú</span>
+          <span>◎ @DisenoWeb</span>
+        </div>
+      </article>
+
+      <article class="panel panel-right">
+        <div class="brand">⌘ <span>WEB LAB</span></div>
+        <h2>Soluciones<br>Innovadoras</h2>
+        <div class="photo-wrap photo-oval">
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85" alt="Tecnología y realidad virtual">
+        </div>
+        <div class="badge"><strong>100%</strong><span>CREATIVO</span></div>
+      </article>
+    </section>
+
+    <section class="trifold card second-card">
+      <article class="panel inner-left">
+        <div class="feature"><div class="icon">⚙</div><h3>Desarrollo Web</h3><p>Construcción de sitios funcionales usando HTML, CSS y JavaScript.</p></div>
+        <div class="feature"><div class="icon">🖥</div><h3>Diseño Responsive</h3><p>Interfaces que se adaptan correctamente a celulares, tablets y computadoras.</p></div>
+        <div class="feature"><div class="icon">💻</div><h3>Programación</h3><p>Lógica, interacción, bases de datos y desarrollo de soluciones digitales.</p></div>
+        <button id="infoBtn" class="outline-btn">Conoce más</button>
+      </article>
+
+      <article class="panel inner-center">
+        <h2 class="big-title">Tech<br>Trends</h2>
+        <p class="subtitle">Innovación que transforma ideas.</p>
+        <div class="photo-square">
+          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85" alt="Innovación tecnológica">
+        </div>
+      </article>
+
+      <article class="panel inner-right">
+        <div class="skill"><span>HTML</span><div class="bar"><i style="width:92%"></i></div></div>
+        <div class="skill"><span>CSS</span><div class="bar"><i style="width:86%"></i></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><i style="width:78%"></i></div></div>
+        <h2 class="analytics">Diseño<br>Web</h2>
+        <div class="round-icon">🖥</div>
+        <h3>Diseño + Código</h3>
+        <p>Aprende a crear páginas modernas, interactivas y listas para publicarse en Internet.</p>
+      </article>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <button id="closeModal" class="close">×</button>
+      <h2>Diseño y Programación Web</h2>
+      <p>Esta es una demostración. Después podemos reemplazar textos, imágenes, colores, logo, datos del instituto y agregar animaciones.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
