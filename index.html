@@ -4,156 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#064b88">
-  <title>Tríptico Digital | Diseño y Programación Web</title>
+  <title>Tríptico 3D | Diseño y Programación Web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="page-head">
-    <img src="img/logo-iestph.png" alt="Logo IESTP Huaycán">
-    <div>
-      <span>IESTP HUAYCÁN</span>
-      <h1>Tríptico Digital</h1>
-      <p>Diseño y Programación Web</p>
+  <header class="topbar">
+    <div class="brand">
+      <img src="img/logo-iestph.png" alt="Logo IESTP Huaycán">
+      <div>
+        <span>IESTP HUAYCÁN</span>
+        <strong>Diseño y Programación Web</strong>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="toggleOpen" class="btn primary">Abrir tríptico</button>
+      <button id="toggleFace" class="btn ghost">Ver cara interior</button>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="face-block">
-      <div class="face-label">CARA EXTERIOR</div>
+  <main class="stage">
+    <div class="helper">
+      <span class="dot"></span>
+      Haz clic en “Abrir tríptico” para ver el efecto 3D.
+    </div>
 
-      <div class="trifold">
-        <!-- Panel 1 exterior: contraportada -->
-        <article class="panel back-panel">
-          <span class="mini-title">PERFIL DE EGRESADO</span>
-          <h2>Profesional preparado para crear e innovar</h2>
-          <p>
-            El egresado está capacitado para desarrollar y construir programas de
-            sistemas de información, implementar servicios de TI y diseñar contenidos
-            y servicios web según las demandas del negocio.
-          </p>
-          <p>
-            Aplica técnicas de diseño web, usabilidad y experiencia del usuario,
-            se comunica de manera efectiva y utiliza la tecnología de la información
-            con ética, innovación y actitud colaborativa.
-          </p>
-          <div class="accent-line"></div>
+    <section class="brochure-wrap">
+      <div id="brochure" class="brochure closed exterior">
+
+        <!-- PANEL IZQUIERDO -->
+        <article class="panel panel-left">
+          <div class="face face-front exterior-left">
+            <span class="eyebrow">PERFIL DE EGRESADO</span>
+            <h2>Preparado para crear e innovar</h2>
+            <p>
+              El egresado está capacitado para desarrollar y construir programas
+              de sistemas de información, implementar servicios de TI y diseñar
+              contenidos y servicios web según las demandas del negocio.
+            </p>
+            <p>
+              Aplica técnicas de diseño web, usabilidad y experiencia del usuario,
+              se comunica de manera efectiva y utiliza la tecnología con ética,
+              innovación y actitud colaborativa.
+            </p>
+            <div class="shape-circle"></div>
+          </div>
+
+          <div class="face face-back interior-left">
+            <span class="step">01</span>
+            <span class="eyebrow">SOBRE EL PROGRAMA</span>
+            <h2>Tecnología al servicio de las organizaciones</h2>
+            <p>
+              La Carrera Profesional de Diseño y Programación Web del IESTP “HUAYCÁN”
+              se ha convertido en un pilar esencial para distintos tipos de organización.
+            </p>
+            <p>
+              Su impacto abarca desde el soporte técnico hasta el desarrollo de soluciones
+              digitales para la gestión, análisis y visualización de datos comerciales.
+            </p>
+            <div class="mini-icon">&lt;/&gt;</div>
+          </div>
         </article>
 
-        <!-- Panel 2 exterior: contacto / resumen -->
-        <article class="panel contact-panel">
-          <div class="logo-small">
-            <img src="img/logo-iestph.png" alt="IESTP Huaycán">
+        <!-- PANEL CENTRAL -->
+        <article class="panel panel-center">
+          <div class="face face-front exterior-center">
+            <div class="logo-box">
+              <img src="img/logo-iestph.png" alt="IESTP Huaycán">
+            </div>
+            <span class="eyebrow light">IESTP HUAYCÁN</span>
+            <h2>Diseño + Código + Creatividad</h2>
+            <p>
+              Formación orientada al desarrollo de soluciones digitales,
+              sistemas interactivos y experiencias web modernas.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>UX/UI</span>
+            </div>
+            <div class="qr-note">
+              <strong>TRÍPTICO DIGITAL</strong>
+              <span>Escanea el QR del stand</span>
+            </div>
           </div>
-          <span class="mini-title light">IESTP HUAYCÁN</span>
-          <h2>Diseño + Código + Creatividad</h2>
-          <p>
-            Formación orientada al desarrollo de soluciones digitales, sistemas
-            interactivos y experiencias web modernas.
-          </p>
 
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX/UI</span>
-          </div>
-
-          <div class="contact-box">
-            <strong>Escanea el QR del stand</strong>
-            <span>Conoce la carrera desde tu celular</span>
+          <div class="face face-back interior-center">
+            <span class="step light-step">02</span>
+            <span class="eyebrow light">COMPETENCIAS</span>
+            <h2>Lo que aprenderás</h2>
+            <ul>
+              <li>Desarrollar programas de sistemas de información con buenas prácticas y estándares de TI.</li>
+              <li>Realizar pruebas integrales de sistemas y servicios de TI en la fase de implantación.</li>
+              <li>Diseñar contenidos y servicios web considerando usabilidad y experiencia del usuario.</li>
+            </ul>
           </div>
         </article>
 
-        <!-- Panel 3 exterior: portada -->
-        <article class="panel cover-panel">
-          <div class="cover-logo">
-            <img src="img/logo-iestph.png" alt="Logo IESTP Huaycán">
-          </div>
-          <span class="career-label">CARRERA PROFESIONAL</span>
-          <h2>Diseño y<br><strong>Programación Web</strong></h2>
-          <p>Diseña ideas. Programa experiencias.</p>
+        <!-- PANEL DERECHO / PORTADA -->
+        <article class="panel panel-right">
+          <div class="face face-front exterior-right">
+            <div class="cover-logo">
+              <img src="img/logo-iestph.png" alt="Logo IESTP Huaycán">
+            </div>
+            <span class="eyebrow">CARRERA PROFESIONAL</span>
+            <h1>Diseño y<br><strong>Programación Web</strong></h1>
+            <p class="slogan">Diseña ideas. Programa experiencias.</p>
 
-          <div class="cover-decoration">
-            <span>&lt;/&gt;</span>
+            <div class="code-badge">&lt;/&gt;</div>
+            <div class="red-accent"></div>
           </div>
 
-          <div class="red-detail"></div>
+          <div class="face face-back interior-right">
+            <span class="step">03</span>
+            <span class="eyebrow">EXPERIENCIA FORMATIVA</span>
+            <h2>Aprender haciendo</h2>
+            <p>
+              Las experiencias formativas en situación real de trabajo (EFRST)
+              son componentes clave en la formación de los estudiantes.
+            </p>
+            <p>
+              Se desarrollan sitios web, aplicaciones y sistemas interactivos
+              para empresas e instituciones.
+            </p>
+            <p>
+              Estas prácticas fortalecen habilidades técnicas, creativas y colaborativas.
+            </p>
+            <div class="skills">
+              <span>Web</span><span>Apps</span><span>Sistemas</span>
+            </div>
+          </div>
         </article>
+
       </div>
     </section>
 
-    <section class="face-block">
-      <div class="face-label">CARA INTERIOR</div>
-
-      <div class="trifold">
-        <!-- Panel 1 interior -->
-        <article class="panel inner-panel">
-          <span class="step">01</span>
-          <span class="mini-title">SOBRE EL PROGRAMA</span>
-          <h2>Tecnología al servicio de las organizaciones</h2>
-          <p>
-            La Carrera Profesional de Diseño y Programación Web del IESTP “HUAYCÁN”
-            ha evolucionado hasta convertirse en un pilar esencial para todo tipo de
-            organización.
-          </p>
-          <p>
-            Su impacto abarca desde el soporte técnico hasta el desarrollo de soluciones
-            digitales para la gestión, análisis y visualización de datos comerciales.
-          </p>
-          <div class="icon-card">&lt;/&gt;</div>
-        </article>
-
-        <!-- Panel 2 interior -->
-        <article class="panel inner-panel blue-panel">
-          <span class="step">02</span>
-          <span class="mini-title light">COMPETENCIAS</span>
-          <h2>Lo que aprenderás</h2>
-
-          <ul class="competencies">
-            <li>
-              Desarrollar programas de sistemas de información aplicando estándares
-              internacionales de TI y buenas prácticas de programación.
-            </li>
-            <li>
-              Desarrollar pruebas integrales de sistemas y servicios de TI durante
-              la fase de implantación.
-            </li>
-            <li>
-              Diseñar presentación, animación, organización y navegación de contenidos
-              y servicios web, considerando usabilidad y experiencia del usuario.
-            </li>
-          </ul>
-        </article>
-
-        <!-- Panel 3 interior -->
-        <article class="panel inner-panel">
-          <span class="step">03</span>
-          <span class="mini-title">EXPERIENCIA FORMATIVA</span>
-          <h2>Aprender haciendo</h2>
-          <p>
-            Las experiencias formativas en situación real de trabajo (EFRST) son
-            componentes clave en la formación de los estudiantes de Diseño y
-            Programación Web.
-          </p>
-          <p>
-            Los estudiantes aplican sus conocimientos en entornos reales desarrollando
-            sitios web, aplicaciones y sistemas interactivos para empresas e instituciones.
-          </p>
-          <p>
-            Estas prácticas fortalecen habilidades técnicas, creativas y colaborativas,
-            preparándolos para afrontar desafíos digitales con innovación y eficiencia.
-          </p>
-          <div class="skills">
-            <span>Web</span><span>Apps</span><span>Sistemas</span>
-          </div>
-        </article>
-      </div>
-    </section>
+    <div class="legend">
+      <span><i class="fold fold-left"></i> pliegue izquierdo</span>
+      <span><i class="fold fold-right"></i> pliegue derecho</span>
+    </div>
   </main>
 
   <footer>
-    <span>IESTP HUAYCÁN · Diseño y Programación Web</span>
-    <button id="topBtn">↑</button>
+    <span>IESTP HUAYCÁN · Tríptico interactivo</span>
   </footer>
 
   <script src="js/script.js"></script>
