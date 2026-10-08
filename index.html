@@ -3,88 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tríptico Digital - Diseño y Programación Web</title>
+  <meta name="theme-color" content="#064b88">
+  <title>Diseño y Programación Web | IESTP Huaycán</title>
+  <meta name="description" content="Tríptico digital de la carrera profesional de Diseño y Programación Web del IESTP Huaycán.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="top">
-    <h1>TRÍPTICO</h1>
-    <p>Diseño y Programación Web</p>
+  <div class="top-line"></div>
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">
+        <img src="img/logo-iestph.png" alt="Logo del IESTP Huaycán">
+        <div>
+          <strong>IESTP HUAYCÁN</strong>
+          <span>Tríptico digital</span>
+        </div>
+      </div>
+      <a class="nav-link" href="#contenido">Conoce el programa</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <span class="eyebrow">CARRERA PROFESIONAL</span>
+        <h1>Diseño y<br><span>Programación Web</span></h1>
+        <p>
+          Diseña experiencias digitales, desarrolla soluciones web
+          y transforma ideas en productos tecnológicos funcionales.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contenido">Explorar tríptico</a>
+          <a class="btn secondary" href="#perfil">Perfil de egresado</a>
+        </div>
+      </div>
+
+      <div class="hero-logo-card">
+        <div class="glow"></div>
+        <img src="img/logo-iestph.png" alt="IESTP Huaycán">
+        <div class="tech-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+          <span>UX/UI</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-note">Desliza para conocer más ↓</div>
   </header>
 
-  <main class="wrapper">
-    <section class="trifold card">
-      <article class="panel panel-left">
-        <div class="bubble bubble-a"></div>
-        <div class="photo-wrap photo-round">
-          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85" alt="Persona usando realidad virtual">
-        </div>
-        <h2>Diseño<br>Futurista</h2>
-        <p>Creamos experiencias digitales modernas, atractivas y adaptadas a cualquier dispositivo.</p>
-        <p>Combinamos creatividad, diseño visual y programación para transformar ideas en proyectos web.</p>
+  <main id="contenido">
+    <section class="intro">
+      <span class="section-kicker">SOBRE EL PROGRAMA</span>
+      <h2>Creatividad, tecnología y soluciones digitales</h2>
+      <p>
+        La Carrera Profesional de Diseño y Programación Web del IESTP “HUAYCÁN”
+        ha evolucionado al punto de convertirse en un pilar esencial para todo tipo
+        de organización. Su impacto abarca desde el soporte técnico discreto en una
+        mesa de ayuda, hasta el desarrollo de soluciones digitales para la gestión,
+        análisis y visualización de datos comerciales.
+      </p>
+    </section>
+
+    <!-- Tríptico interior: 3 paneles -->
+    <section class="trifold">
+      <article class="panel">
+        <div class="number">01</div>
+        <div class="icon-box">&lt;/&gt;</div>
+        <h3>Construcción de sistemas</h3>
+        <p>
+          Desarrollar programas de sistemas de información de acuerdo con el diseño
+          funcional, estándares internacionales de TI, buenas prácticas de programación
+          y políticas de seguridad de la organización.
+        </p>
       </article>
 
-      <article class="panel panel-center center-content">
-        <h2 class="big-title">VISÍTANOS</h2>
-        <div class="qr-demo" aria-label="QR de demostración"><div class="qr-grid"></div></div>
-        <p class="small">Escanea el código QR para conocer más sobre nuestra carrera, proyectos y actividades.</p>
-        <h3>CONTÁCTANOS</h3>
-        <div class="contact-list">
-          <span>☎ +51 999 999 999</span>
-          <span>✉ correo@instituto.edu.pe</span>
-          <span>⌖ Lima, Perú</span>
-          <span>◎ @DisenoWeb</span>
-        </div>
+      <article class="panel featured">
+        <div class="number">02</div>
+        <div class="icon-box">✓</div>
+        <h3>Pruebas e implantación</h3>
+        <p>
+          Desarrollar pruebas integrales de sistemas de información y servicios de TI
+          durante la fase de implantación, aplicando buenas prácticas y políticas
+          de seguridad.
+        </p>
       </article>
 
-      <article class="panel panel-right">
-        <div class="brand">⌘ <span>WEB LAB</span></div>
-        <h2>Soluciones<br>Innovadoras</h2>
-        <div class="photo-wrap photo-oval">
-          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85" alt="Tecnología y realidad virtual">
-        </div>
-        <div class="badge"><strong>100%</strong><span>CREATIVO</span></div>
+      <article class="panel">
+        <div class="number">03</div>
+        <div class="icon-box">✦</div>
+        <h3>Diseño y experiencia web</h3>
+        <p>
+          Diseñar la presentación, animación, organización y navegación de contenidos
+          y servicios web, considerando usabilidad, técnicas de diseño y experiencia
+          del usuario.
+        </p>
       </article>
     </section>
 
-    <section class="trifold card second-card">
-      <article class="panel inner-left">
-        <div class="feature"><div class="icon">⚙</div><h3>Desarrollo Web</h3><p>Construcción de sitios funcionales usando HTML, CSS y JavaScript.</p></div>
-        <div class="feature"><div class="icon">🖥</div><h3>Diseño Responsive</h3><p>Interfaces que se adaptan correctamente a celulares, tablets y computadoras.</p></div>
-        <div class="feature"><div class="icon">💻</div><h3>Programación</h3><p>Lógica, interacción, bases de datos y desarrollo de soluciones digitales.</p></div>
-        <button id="infoBtn" class="outline-btn">Conoce más</button>
-      </article>
+    <section class="experience">
+      <div class="experience-copy">
+        <span class="section-kicker">EXPERIENCIAS FORMATIVAS</span>
+        <h2>Aprender haciendo, en situaciones reales de trabajo</h2>
+        <p>
+          Las experiencias formativas en situación real de trabajo (EFRST) son
+          componentes clave en la formación de los estudiantes de Diseño y Programación Web.
+          Los estudiantes aplican sus conocimientos en entornos reales desarrollando
+          sitios web, aplicaciones y sistemas interactivos para empresas e instituciones.
+        </p>
+        <p>
+          Estas prácticas fortalecen sus habilidades técnicas, creativas y colaborativas,
+          preparándolos para enfrentar desafíos digitales con innovación y eficiencia.
+        </p>
+      </div>
 
-      <article class="panel inner-center">
-        <h2 class="big-title">Tech<br>Trends</h2>
-        <p class="subtitle">Innovación que transforma ideas.</p>
-        <div class="photo-square">
-          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85" alt="Innovación tecnológica">
+      <div class="experience-visual">
+        <div class="code-window">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <pre><code>&lt;section class="futuro"&gt;
+  &lt;h1&gt;Diseña&lt;/h1&gt;
+  &lt;h2&gt;Programa&lt;/h2&gt;
+  &lt;p&gt;Crea soluciones.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="panel inner-right">
-        <div class="skill"><span>HTML</span><div class="bar"><i style="width:92%"></i></div></div>
-        <div class="skill"><span>CSS</span><div class="bar"><i style="width:86%"></i></div></div>
-        <div class="skill"><span>JavaScript</span><div class="bar"><i style="width:78%"></i></div></div>
-        <h2 class="analytics">Diseño<br>Web</h2>
-        <div class="round-icon">🖥</div>
-        <h3>Diseño + Código</h3>
-        <p>Aprende a crear páginas modernas, interactivas y listas para publicarse en Internet.</p>
+    <section class="profile" id="perfil">
+      <div class="profile-title">
+        <span class="section-kicker light">PERFIL DE EGRESADO</span>
+        <h2>Profesionales preparados para crear, innovar y colaborar</h2>
+      </div>
+
+      <div class="profile-grid">
+        <div>
+          <p>
+            El egresado del Programa de Estudios de Diseño y Programación Web está
+            capacitado para desarrollar y construir programas de los sistemas de
+            información, así como implementar los servicios de TI en la fase de implantación.
+          </p>
+          <p>
+            También es capaz de diseñar la presentación, animación, organización y
+            navegación de contenidos y servicios web de acuerdo con las demandas del
+            negocio, aplicando técnicas de diseño web, usabilidad y experiencia del usuario.
+          </p>
+        </div>
+        <div>
+          <p>
+            Se comunica de manera efectiva, utiliza la tecnología de la información
+            y actúa con ética en los espacios en los que se desenvuelve.
+          </p>
+          <p>
+            Soluciona problemas de manera proactiva, con innovación y emprendimiento,
+            promoviendo una cultura ambiental responsable y sostenible, además de
+            valores, disciplina, actitud colaborativa, interculturalidad e igualdad de género.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tríptico exterior / resumen -->
+    <section class="summary">
+      <article class="summary-card">
+        <span>01</span>
+        <h3>Diseño web</h3>
+        <p>Presentación visual, animación, organización, navegación y experiencia de usuario.</p>
+      </article>
+      <article class="summary-card">
+        <span>02</span>
+        <h3>Programación</h3>
+        <p>Desarrollo de sistemas de información con buenas prácticas y estándares de TI.</p>
+      </article>
+      <article class="summary-card">
+        <span>03</span>
+        <h3>Experiencia real</h3>
+        <p>Aplicación de conocimientos en proyectos para empresas e instituciones.</p>
       </article>
     </section>
   </main>
 
-  <div id="modal" class="modal">
-    <div class="modal-box">
-      <button id="closeModal" class="close">×</button>
-      <h2>Diseño y Programación Web</h2>
-      <p>Esta es una demostración. Después podemos reemplazar textos, imágenes, colores, logo, datos del instituto y agregar animaciones.</p>
+  <footer>
+    <img src="img/logo-iestph.png" alt="Logo IESTP Huaycán">
+    <div>
+      <strong>IESTP HUAYCÁN</strong>
+      <span>Diseño y Programación Web</span>
     </div>
-  </div>
+    <button id="topBtn" aria-label="Volver arriba">↑</button>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
