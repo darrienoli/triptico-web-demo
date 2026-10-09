@@ -781,3 +781,167 @@ footer{width:min(1150px,94%);margin:0 auto 24px;border-top:1px solid var(--line)
     max-width: 285px !important;
   }
 }
+/* =========================================================
+   CORRECCIÓN DE COLORES SEGÚN EL NUEVO ORDEN DEL TRÍPTICO
+   Exterior: IA | Carrera | Portada
+   Interior: Proyecto web | Modo administrador | Gestión
+   ========================================================= */
+
+/* ===== QUITAR LOS NÚMEROS 01 Y 03 ===== */
+.project-modules .step,
+.career-summary .step {
+  display: none !important;
+}
+
+
+/* =========================================================
+   LA CARRERA (fondo blanco)
+   ========================================================= */
+.career-summary {
+  background: #ffffff !important;
+  color: var(--blue) !important;
+}
+
+.career-summary .eyebrow {
+  color: #e54747 !important;
+}
+
+.career-summary h2 {
+  color: var(--blue) !important;
+}
+
+.career-summary .career-lead {
+  color: var(--muted) !important;
+}
+
+.career-summary .career-chips span {
+  color: var(--blue) !important;
+}
+
+.career-summary .career-final strong {
+  color: var(--blue) !important;
+}
+
+.career-summary .career-final span {
+  color: var(--muted) !important;
+}
+
+
+/* =========================================================
+   GESTIÓN DEL NEGOCIO (fondo blanco)
+   ========================================================= */
+.project-modules {
+  background: #ffffff !important;
+  color: var(--blue) !important;
+}
+
+.project-modules .eyebrow {
+  color: #e54747 !important;
+}
+
+.project-modules h2 {
+  color: var(--blue) !important;
+}
+
+.project-modules > p {
+  color: var(--muted) !important;
+}
+
+.project-modules .module-list strong {
+  color: var(--blue) !important;
+}
+
+.project-modules .module-list span {
+  color: var(--muted) !important;
+}
+
+.project-modules .project-note {
+  color: var(--muted) !important;
+}
+
+
+/* =========================================================
+   MODO ADMINISTRADOR (fondo blanco)
+   ========================================================= */
+.admin-showcase {
+  background: #ffffff !important;
+  color: var(--blue) !important;
+}
+
+.admin-showcase .eyebrow {
+  color: #e54747 !important;
+}
+
+.admin-showcase h2 {
+  color: var(--blue) !important;
+}
+
+.admin-showcase > p {
+  color: var(--muted) !important;
+}
+
+.admin-showcase .admin-note {
+  color: var(--muted) !important;
+}
+
+.admin-showcase .admin-features span {
+  color: var(--blue) !important;
+}
+
+
+/* =========================================================
+   PROYECTO WEB COMPLETO (fondo azul)
+   ========================================================= */
+.admin-summary-panel {
+  background: linear-gradient(165deg, #064b88 0%, #0b6ca8 100%) !important;
+  color: #ffffff !important;
+}
+
+.admin-summary-panel .eyebrow {
+  color: #bfe8ff !important;
+}
+
+.admin-summary-panel h2 {
+  color: #ffffff !important;
+}
+
+.admin-summary-panel > p {
+  color: #d9edf7 !important;
+}
+
+.admin-summary-panel .admin-mini-list b {
+  color: #aeeaff !important;
+}
+
+.admin-summary-panel .admin-mini-list span {
+  color: #ffffff !important;
+}
+
+.admin-summary-panel .qr-note strong {
+  color: #ffffff !important;
+}
+
+.admin-summary-panel .qr-note span {
+  color: #d9edf7 !important;
+}
+
+
+/* =========================================================
+   IA (fondo azul) - por si alguna regla la pisa
+   ========================================================= */
+.ai-panel {
+  color: #ffffff !important;
+}
+
+.ai-panel .eyebrow,
+.ai-panel h2,
+.ai-panel .ai-points span,
+.ai-panel .ai-detail,
+.ai-panel p {
+  color: #ffffff !important;
+}
+
+.ai-panel p,
+.ai-panel .ai-detail {
+  color: #d9edf7 !important;
+}
