@@ -242,3 +242,147 @@ footer{width:min(1150px,94%);margin:0 auto 24px;border-top:1px solid var(--line)
   .admin-shot{height:190px}
   .admin-showcase h2{font-size:1.7rem}
 }
+
+
+/* ===== Enfoque del tríptico en el proyecto NOVAPE ===== */
+.project-modules{
+  background:linear-gradient(180deg,#fff 0%,#f7fbfe 100%);
+}
+.project-modules h2{
+  font-size:2rem;
+}
+.module-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin:20px 0 18px;
+}
+.module-list div{
+  padding:12px 13px;
+  border-radius:12px;
+  background:#f0f8fc;
+  border:1px solid #d5ebf5;
+}
+.module-list strong{
+  display:block;
+  color:var(--blue);
+  font-size:.78rem;
+  margin-bottom:3px;
+}
+.module-list span{
+  display:block;
+  color:var(--muted);
+  font-size:.68rem;
+  line-height:1.42;
+}
+.project-note{
+  border-left:3px solid var(--cyan);
+  padding-left:10px;
+  font-size:.72rem!important;
+}
+
+/* IA */
+.ai-panel{
+  background:linear-gradient(165deg,#063d70 0%,#0b5d9c 100%);
+  color:#fff;
+}
+.ai-panel h2{
+  color:#fff;
+  margin-bottom:14px;
+}
+.ai-shot{
+  width:100%;
+  height:235px;
+  border-radius:14px;
+  overflow:hidden;
+  background:#edf3f8;
+  border:1px solid rgba(255,255,255,.15);
+  margin:4px 0 16px;
+  box-shadow:0 12px 28px rgba(0,0,0,.16);
+}
+.ai-shot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+}
+.ai-panel > p{
+  color:#d9edf7;
+  font-size:.73rem;
+  line-height:1.45;
+}
+.ai-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  margin:14px 0;
+}
+.ai-points span{
+  padding:8px 9px;
+  border-radius:9px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.10);
+  color:#fff;
+  font-size:.61rem;
+  font-weight:700;
+  line-height:1.25;
+}
+.ai-detail{
+  border-top:1px solid rgba(255,255,255,.18);
+  padding-top:11px;
+  margin-top:8px;
+}
+
+/* Última página: carrera muy resumida */
+.career-summary{
+  background:
+    radial-gradient(circle at 100% 100%,rgba(68,191,232,.15) 0 100px,transparent 101px),
+    #fff;
+}
+.career-summary h2{
+  font-size:2.15rem;
+  margin-bottom:18px;
+}
+.career-lead{
+  font-size:.86rem!important;
+  line-height:1.55!important;
+}
+.career-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:22px;
+}
+.career-chips span{
+  background:var(--cyan-soft);
+  color:var(--blue);
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:.66rem;
+  font-weight:800;
+}
+.career-final{
+  position:absolute;
+  left:30px;
+  right:30px;
+  bottom:36px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+}
+.career-final strong{
+  color:var(--blue);
+  font-size:.82rem;
+}
+.career-final span{
+  color:var(--muted);
+  font-size:.68rem;
+  margin-top:4px;
+}
+
+@media(max-width:820px){
+  .ai-shot{height:205px}
+  .ai-points{grid-template-columns:1fr}
+}
