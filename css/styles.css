@@ -590,3 +590,194 @@ footer{width:min(1150px,94%);margin:0 auto 24px;border-top:1px solid var(--line)
     height: 630px !important;
   }
 }
+
+
+/* =========================================================
+   AJUSTE FINAL RESPONSIVE
+   Corrige:
+   - contenido cortado en celular
+   - imagen de lenguajes superpuesta
+   - texto final tapado
+   - mantiene solo la portada al cerrar el tríptico
+   ========================================================= */
+
+@media (max-width: 820px) {
+
+  .stage {
+    min-height: 980px !important;
+    padding-top: 10px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .brochure-wrap {
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    justify-content: flex-start !important;
+    padding: 24px 10px 40px !important;
+  }
+
+  /* CERRADO: solo portada */
+  .brochure.closed {
+    width: min(360px, 88vw) !important;
+    height: 760px !important;
+    min-height: 760px !important;
+    margin: 0 auto !important;
+  }
+
+  .brochure.closed .panel {
+    width: 100% !important;
+    height: 760px !important;
+    min-height: 760px !important;
+  }
+
+  .brochure.closed .panel-left,
+  .brochure.closed .panel-center {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .brochure.closed .panel-right {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  /* ABIERTO: 3 paneles horizontales */
+  .brochure.open {
+    min-width: 1020px !important;
+    width: 1020px !important;
+    height: 860px !important;
+    min-height: 860px !important;
+    grid-template-columns: repeat(3, 340px) !important;
+  }
+
+  .brochure.open .panel {
+    width: 340px !important;
+    height: 860px !important;
+    min-height: 860px !important;
+  }
+
+  .face {
+    height: 100% !important;
+    min-height: 860px !important;
+    padding: 28px 23px !important;
+    overflow: hidden !important;
+  }
+
+  .brochure.closed .face {
+    min-height: 760px !important;
+  }
+
+  /* Última cara: resumen de la carrera */
+  .career-summary {
+    min-height: 860px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .career-summary h2 {
+    font-size: 2rem !important;
+    line-height: 1.05 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .career-lead {
+    font-size: .82rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .career-chips {
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .career-image {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 28px auto 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    border-radius: 14px !important;
+    background: transparent !important;
+  }
+
+  .career-image img {
+    width: 88% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    border-radius: 10px !important;
+  }
+
+  .career-final {
+    position: static !important;
+    width: 100% !important;
+    margin-top: 22px !important;
+    padding-top: 16px !important;
+    border-top: 1px solid var(--line) !important;
+    background: transparent !important;
+    z-index: auto !important;
+  }
+
+  .career-final strong {
+    font-size: .82rem !important;
+  }
+
+  .career-final span {
+    font-size: .68rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .ai-shot {
+    height: 205px !important;
+  }
+
+  .ai-points {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .brochure.closed {
+    width: min(340px, 92vw) !important;
+    height: 760px !important;
+  }
+
+  .brochure.open {
+    min-width: 960px !important;
+    width: 960px !important;
+    grid-template-columns: repeat(3, 320px) !important;
+    height: 880px !important;
+    min-height: 880px !important;
+  }
+
+  .brochure.open .panel {
+    width: 320px !important;
+    height: 880px !important;
+    min-height: 880px !important;
+  }
+
+  .brochure.open .face {
+    min-height: 880px !important;
+  }
+
+  .career-summary {
+    min-height: 880px !important;
+  }
+
+  .career-summary h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .career-image img {
+    width: 92% !important;
+    max-width: 285px !important;
+  }
+}
