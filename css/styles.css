@@ -430,3 +430,28 @@ footer{width:min(1150px,94%);margin:0 auto 24px;border-top:1px solid var(--line)
 .brochure.open .panel-right{
   transform:rotateY(0deg);
 }
+/* Imagen inferior - página de la carrera */
+.career-image {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 95px;
+
+  height: 190px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.career-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
