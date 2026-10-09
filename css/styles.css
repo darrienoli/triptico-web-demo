@@ -386,3 +386,47 @@ footer{width:min(1150px,94%);margin:0 auto 24px;border-top:1px solid var(--line)
   .ai-shot{height:205px}
   .ai-points{grid-template-columns:1fr}
 }
+
+
+/* ===== CORRECCIÓN ESTRUCTURAL 3 PANELES ===== */
+.brochure.closed{
+  display:block;
+  width:min(400px,88vw);
+  height:690px;
+  position:relative;
+}
+.brochure.closed .panel{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:690px;
+}
+.brochure.closed .panel-left{
+  transform:translateX(-1px) rotateY(179deg);
+  z-index:1;
+}
+.brochure.closed .panel-center{
+  transform:translateX(0) rotateY(0deg);
+  z-index:2;
+}
+.brochure.closed .panel-right{
+  transform:translateX(1px) rotateY(0deg);
+  z-index:4;
+}
+.brochure.open{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  width:100%;
+  height:690px;
+}
+.brochure.open .panel{
+  position:relative;
+  inset:auto;
+  width:auto;
+  height:690px;
+}
+.brochure.open .panel-left,
+.brochure.open .panel-center,
+.brochure.open .panel-right{
+  transform:rotateY(0deg);
+}
